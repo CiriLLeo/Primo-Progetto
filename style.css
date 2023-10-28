@@ -413,7 +413,10 @@ a {
       padding: 100%;
   }
   .masthead-heading {
-      font-size: 400%;
+      font-size: 300%;
+  }
+  .masthead-intro {
+    font-size: 180%;
   }
 }
 
