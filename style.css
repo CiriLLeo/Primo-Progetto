@@ -118,13 +118,13 @@ input[type="checkbox"]{
 }
 .mytext h2 {
   color: #333;
-  font-size: 90px;
+  font-size: 70px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 .mytext h5 {
   color: #333;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -409,6 +409,12 @@ a {
   }
 }
 
+@media screen and (min-width: 993px) and (max-width: 1210px) {
+  .about {
+    gap: 2rem;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .masthead {
       padding: 100%;
@@ -439,6 +445,9 @@ a {
   .welcome {
     max-width: 100%;
     height: 14rem;
+  }
+  .mytext {
+   width: 100%;
   }
   }
 
