@@ -157,12 +157,13 @@ input[type="checkbox"]{
 }
 
 .section-heading {
-  margin-left: 40%;
+  margin-top: 6rem;
 }
 
 .row,
 .rowone {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 6rem;
   margin-top: 6rem;
@@ -212,8 +213,6 @@ input[type="checkbox"]{
 .card:hover p {
   color: #f0f0f0;
 }
-
-/* prova nuova */
 .contactme {
   display: flex;
   justify-content: center;
@@ -478,6 +477,11 @@ a {
     nav ul li a:hover{
       background: none;
       color: cyan;
+    }
+    .section-heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 
