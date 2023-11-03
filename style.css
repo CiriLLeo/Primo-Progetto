@@ -19,6 +19,28 @@ nav{
   z-index: 2;
   top: 0;
 }
+
+.linklogo {
+  display: inline-block;
+}
+
+.linklogo:hover {
+  text-decoration: none;
+}
+
+.linklogo::after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: #fff;
+  transition: 300ms;
+}
+
+.linklogo:hover::after {
+  width: 100%;
+}
+
 nav .logo{
   color: #fff;
   font-size: 35px;
@@ -41,11 +63,13 @@ nav ul li a{
   border-radius: 5px;
   letter-spacing: 1px;
   transition: all 0.3s ease;
+  
 }
 nav ul li a.active,
 nav ul li a:hover{
   color: #111;
   background: #fff;
+  text-decoration: none;
 }
 nav .menu-btn i{
   color: #fff;
@@ -146,9 +170,14 @@ input[type="checkbox"]{
   padding: 12px 25px;
   border-radius: 6px;
   transition: 0.5s;
+  box-shadow: 0px 15px 10px -10px rgba( 0,0,0,0.8);
+  transition: all .9s;
 }
 .hire:hover {
   background: #000;
+  text-decoration: none;
+  box-shadow: 0px 45px 20px -30px rgba( 0,0,0,0.2);
+  transform: translateY(-50px);
 }
 
 .future {
@@ -228,7 +257,33 @@ input[type="checkbox"]{
 }
 
 a {
-  text-decoration: none; 
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.info a {
+  display: inline-block;
+}
+
+.info a:hover {
+  text-decoration: none;
+}
+
+.info a::after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: #fff;
+  transition: 300ms;
+}
+
+.info a:hover::after {
+  width: 100%;
 }
 
 .container .contactinfo {
@@ -389,11 +444,16 @@ a {
   border: none;
   max-width: 150px;
   padding: 12px;
+  box-shadow: 0px 15px 10px -10px rgba( 0,0,0,0.8);
+  transition: all .8s;
 }
 
 .container .contactform .formbox .inputbox input[type="submit"]:hover {
-  background: #00838F;
+  background-color: #009688;
+  box-shadow: 0px 45px 20px -30px rgba( 0,0,0,0.2);
+  transform: translateY(-20px);
 }
+
 
 @media screen and (min-width: 768px) {
   .column {
